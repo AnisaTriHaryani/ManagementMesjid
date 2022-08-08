@@ -81,7 +81,7 @@
 
                         <a class="collapse-item" href="">Data Jama'ah</a>
                              <ul>
-                                <a class="collapse-item" href="Idarah/DataJamaah.html">Data Jama'ah</a>
+                                <a class="collapse-item" href="#" onclick="movePage('Idarah/DataJamaah.html')">Data Jama'ah</a>
                                 <a class="collapse-item" href="">Data Donatur</a>
                                 <a class="collapse-item" href="">Berita Duka Cita</a>
                             </ul>
@@ -358,58 +358,10 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
+                    <div id="includedContent"></div>
 
                     <!-- Page Heading -->
-                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Beranda</h1>
-                                
-                    </div>
-
-                    <div class="main row justify-content-center">
-                        <from action=""id="student-from" class="row justify-content-center mb-4" autocapitalize="off">
-                            <div class="ol-10 col-md-8 mb-3">
-                                <label for="firstName">First Name</label>
-                                <input class="from-control" id="firstName" type="text" placholder="Enter First Name">
-                            </div>
-                            <div class="col-10 col-md-8 mb-3">
-                                <label for="lastName">Last Name</label>
-                                <input class="from-control" id="firstName" type="text" placholder="Enter Last Name">
-                            </div>
-                            <div class="col-10 col-md-8 mb-3">
-                                <label for="rollNo">Roll No</label>
-                                <input class="from-control" id="firstName" type="text" placholder="Enter Roll No">
-                            </div>
-                            <div class="col-10 col-md-8 md-8">
-                                <!--<input class="btn btn-success add-btn" type="submit" value="submit">-->
-                                <button class="btn btn-success"id="btn-create">Create</button>
-                            </div>
-                        </from>
-                        <div class="col-12 col-md-10 mt-5">
-                            <table class="table table-striped table-dark">
-                                <thead>
-                                    <tr>
-                                        <th>First Name</th>
-                                        <th>Last Name</th>
-                                        <th>Roll No</th>
-                                        <th>Actions</th>
-
-                                    </tr>
-                                </thead>
-                            <tbody id="student-list">
-                                <tr>
-                                    <td>Dear</td>
-                                    <td>Programmer</td>
-                                    <td>25</td>
-                                    <td>
-                                        <a href="a" class="btn btn-warning btn-sm edit">Edit</a>
-                                        <a href="a" class="btn btn-warning btn-sm delete">Delete</a>
-
-                                    </td>
-                                </tr>
-                            </tbody> 
-                            </table>
-                        </div>
-                    </div>
+                    
                 
 
                     <!--<div class="container text-center">
@@ -499,13 +451,13 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <footer class="sticky-footer bg-white">
+            <!-- <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
                         <span>Copyright &copy; Dadan Suwandi</span>
                     </div>
                 </div>
-            </footer>
+            </footer> -->
             <!-- End of Footer -->
 
         </div>
@@ -566,6 +518,15 @@
     <script src="js/dbmgr.js" type="module"></script>
     <script src="renderer.js"></script>
     <script src="DataJamaah.html"></script>
+    <script>
+        $(function(){
+            $("#includedContent").load("Beranda/index.html"); 
+        });
+
+        function movePage(page) {
+            $("#includedContent").load(page); 
+        }
+    </script> 
 
 </body>
 
