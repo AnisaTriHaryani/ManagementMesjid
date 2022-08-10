@@ -43,7 +43,7 @@
 
 
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-    <h1 class="h3 mb-0 text-gray-600">Data Jamaah</h1>
+    <h1 class="h3 mb-0 text-gray-600">Data Khatib</h1>
   
         <button class="btn btn-success" id="myBtn">Add</button>    
 
@@ -56,40 +56,40 @@
                 </div>
 
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    <h3 class="h3 mb-0 text-gray-600">Form Jamaah</h3>
+                    <h3 class="h3 mb-0 text-gray-600">Form Khatib</h3>
                 </div>
 
-                <label for="email"><b>No. Id. Jamaah :</b></label>
+                <label for="email"><b>Nama :</b></label>
                 <input style="line-height: 10px" type="text" name="email" required >              
 
-                <label for="email"><b>Nama Lengkap :</b></label>
+                <label for="email"><b>Alamat :</b></label>
                 <input style="line-height: 10px" type="text" name="email" required>               
             
-                <label for="email"><b>Tempat Tanggal Lahir :</b></label>
+                <label for="email"><b>Telp/HP :</b></label>
                 <input style="line-height: 10px" type="text" name="email" required>
 
-                <label for="email"><b>JK :</b></label>
+                <label for="email"><b>Pendidikan :</b></label>
+                <input style="line-height: 10px" type="text" name="email" required>
+
+                <label for="email"><b>Kompetensi :</b></label>
+                <input style="line-height: 10px" type="text" name="email" required>
+
+                <label for="email"><b>Pelatihan Bersertifikat :</b></label>
+                <input style="line-height: 10px" type="text" name="email" required>
+
+                <label for="email"><b>Tetap/Tidak Tetap : </b></label>
                 <select name="JK">
                     <option value="-">-</option>
-                    <option value="pria">Pria</option>
-                    <option value="wanita">Wanita</option>
+                    <option value="tetap">Tetap</option>
+                    <option value="tidak tetap">Tidak Tetap</option>
                 </select>
-                <!-- <input style="line-height: 10px" type="text" name="email" required> -->
-
-                <label for="email"><b>Alamat :</b></label>
-                <input style="line-height: 10px" type="text" name="email" required>
-
-                <label for="email"><b>No.Telp Rumah :</b></label>
-                <input style="line-height: 10px" type="text" name="email" required>
-
-                <label for="email"><b>HP : </b></label>
-                <input style="line-height: 10px" type="text" name="email" required>
-
-                <label for="email"><b>Pekerjaan :</b></label>
-                <input style="line-height: 10px" type="text" name="email" required>
-
-                <label for="email"><b>Keterangan :</b></label>
-                <input style="line-height: 10px" type="text" name="email" required>
+               
+                <label for="email"><b>Aktif/Tidak Aktif :</b></label>
+                <select name="JK">
+                    <option value="-">-</option>
+                    <option value="aktif">Aktif</option>
+                    <option value="tidak aktif">Tidak Aktif</option>
+                </select>
 
                 <div class="col text-right">
                     <button class="btn btn-success" id="myBtnSubmit">Simpan</button>
@@ -106,15 +106,14 @@
             <thead>
                 <tr>
                     <th>No</th>
-                    <th>No. Id. Jamaah</th>
-                    <th>Nama Lengkap</th>
-                    <th>Tempat Tanggal Lahir</th>
-                    <th>JK</th>
+                    <th>Nama</th>
                     <th>Alamat</th>
-                    <th>No.Telp Rumah</th>
-                    <th>HP</th>
-                    <th>Pekerjaan</th>
-                    <th>Keterangan</th>
+                    <th>Telp/HP</th>
+                    <th>Pendidikan</th>
+                    <th>Kompetensi</th>
+                    <th>Pelatihan Bersertifikat</th>
+                    <th>Tetap/Tidak Tetap</th>
+                    <th>Aktif/Tidak Aktif </th>
                     <th>Action</th>
 
                 </tr>
@@ -123,19 +122,17 @@
             <tr>
                 <td>1</td>
                 <td>2603</td>
-                <td>Anisa Tri Haryani</td>
+                <td>Azriel Ilham</td>
                 <td>Bogor, 26 Maret 2003</td>
                 <td>Perempuan</td>
+                <td>2</td>
                 <td>Jln. Lodaya</td>
-                <td>085775886370</td>
-                <td>085775886370</td>
-                <td>Programmer</td>
-                <td></td>
+                <td>Tetap</td>
+                <td>Aktif</td>
+                
                 <td>
-                    
                     <a href="a" class="btn btn-warning btn-sm edit">Edit</a>
                     <a href="a" class="btn btn-warning btn-sm delete">Delete</a>
-                    
 
                 </td>
             </tr>

@@ -43,7 +43,7 @@
 
 
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-    <h1 class="h3 mb-0 text-gray-600">Data Jamaah</h1>
+    <h1 class="h3 mb-0 text-gray-600">Data Pengurus Mesjid</h1>
   
         <button class="btn btn-success" id="myBtn">Add</button>    
 
@@ -56,39 +56,42 @@
                 </div>
 
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    <h3 class="h3 mb-0 text-gray-600">Form Jamaah</h3>
+                    <h3 class="h3 mb-0 text-gray-600">Form Pengurus Mesjid</h3>
                 </div>
 
-                <label for="email"><b>No. Id. Jamaah :</b></label>
+                <label for="email"><b>Nama Pengurus :</b></label>
                 <input style="line-height: 10px" type="text" name="email" required >              
 
-                <label for="email"><b>Nama Lengkap :</b></label>
+                <label for="email"><b>Tempat Lahir:</b></label>
                 <input style="line-height: 10px" type="text" name="email" required>               
             
-                <label for="email"><b>Tempat Tanggal Lahir :</b></label>
+                <label for="email"><b>Tanggal Lahir :</b></label>
                 <input style="line-height: 10px" type="text" name="email" required>
 
-                <label for="email"><b>JK :</b></label>
-                <select name="JK">
+                <label for="email"><b>Jenis Kelamin :</b></label>
+                <select name="Jenis Kelamin">
                     <option value="-">-</option>
                     <option value="pria">Pria</option>
                     <option value="wanita">Wanita</option>
                 </select>
-                <!-- <input style="line-height: 10px" type="text" name="email" required> -->
 
-                <label for="email"><b>Alamat :</b></label>
+                <label for="email"><b>Alamat Rumah :</b></label>
                 <input style="line-height: 10px" type="text" name="email" required>
 
-                <label for="email"><b>No.Telp Rumah :</b></label>
+                <label for="email"><b>Jabatan :</b></label>
+                <select name="Jabatan">
+                    <option value="-">-</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+
+                <label for="email"><b>Periode Jabatan: </b></label>
+                <input style="line-height: 10px" type="text" name="email" required>
+               
+                <label for="email"><b>No. HP:</b></label>
                 <input style="line-height: 10px" type="text" name="email" required>
 
-                <label for="email"><b>HP : </b></label>
-                <input style="line-height: 10px" type="text" name="email" required>
-
-                <label for="email"><b>Pekerjaan :</b></label>
-                <input style="line-height: 10px" type="text" name="email" required>
-
-                <label for="email"><b>Keterangan :</b></label>
+                <label for="email"><b>Email :</b></label>
                 <input style="line-height: 10px" type="text" name="email" required>
 
                 <div class="col text-right">
@@ -106,15 +109,15 @@
             <thead>
                 <tr>
                     <th>No</th>
-                    <th>No. Id. Jamaah</th>
-                    <th>Nama Lengkap</th>
-                    <th>Tempat Tanggal Lahir</th>
-                    <th>JK</th>
-                    <th>Alamat</th>
-                    <th>No.Telp Rumah</th>
-                    <th>HP</th>
-                    <th>Pekerjaan</th>
-                    <th>Keterangan</th>
+                    <th>Nama Pengurus</th>
+                    <th>Tempat Lahir</th>
+                    <th>Tanggal Lahir</th>
+                    <th>Jenis Kelamin</th>
+                    <th>Alamat Rumah</th>
+                    <th>Jabatan</th>
+                    <th>Periode Jabatan</th>
+                    <th>No. Hp </th>
+                    <th>Email</th>
                     <th>Action</th>
 
                 </tr>
@@ -123,19 +126,18 @@
             <tr>
                 <td>1</td>
                 <td>2603</td>
-                <td>Anisa Tri Haryani</td>
+                <td>Azriel Ilham</td>
                 <td>Bogor, 26 Maret 2003</td>
                 <td>Perempuan</td>
+                <td>2</td>
                 <td>Jln. Lodaya</td>
-                <td>085775886370</td>
-                <td>085775886370</td>
-                <td>Programmer</td>
-                <td></td>
+                <td>Tetap</td>
+                <td>Aktif</td>
+                <td>Tetap</td>
+                               
                 <td>
-                    
                     <a href="a" class="btn btn-warning btn-sm edit">Edit</a>
                     <a href="a" class="btn btn-warning btn-sm delete">Delete</a>
-                    
 
                 </td>
             </tr>
