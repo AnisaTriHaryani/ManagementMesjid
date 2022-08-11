@@ -1,0 +1,158 @@
+<style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    
+    /* The Modal (background) */
+    .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    
+    /* Modal Content */
+    .modal-content {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 30px;
+      border: 1px solid #888;
+      width: 30%;
+    }
+    
+    /* The Close Button */
+    .close {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    </style>
+
+
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-600">Remaja Masjid</h1>
+  
+        <button class="btn btn-success" id="myBtn">Add</button>    
+
+        <div id="myModal" class="modal">
+    
+            <div class="modal-content">
+
+                <div class="col text-right">
+                    <span class="close">&times;</span>
+                </div>
+
+                <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                    <h3 class="h3 mb-0 text-gray-600">Form Remaja Masjid</h3>
+                </div>
+
+                <label for="email"><b>Nama :</b></label>
+                <input style="line-height: 10px" type="text" name="Nama" required >              
+
+                <label for="email"><b>Alamat :</b></label>
+                <input style="line-height: 10px" type="text" name="Alamat" required>               
+            
+                <label for="email"><b>Nomor Tlp/Hp :</b></label>
+                <input style="line-height: 10px" type="text" name="Tlp/Hp" required>
+
+                <label for="email"><b>Pendidikan :</b></label>
+                <input style="line-height: 10px" type="text" name="Pendidikan" required>
+
+                <label for="email"><b>Kompetensi :</b></label>
+                <input style="line-height: 10px" type="text" name="Kompetensi" required>
+
+                <label for="email"><b>Pelatihan Bersertifikat :</b></label>
+                <input style="line-height: 10px" type="text" name="Pelatihan Besertifikat" required>
+
+                <label for="email"><b>Tetap/Tidak Tetap : </b></label>
+                <input style="line-height: 10px" type="text" name="Status" required>
+
+                <label for="email"><b>Aktif/Tidak Aktif :</b></label>
+                <input style="line-height: 10px" type="text" name="Status" required>
+
+                <div class="col text-right">
+                    <button class="btn btn-success" id="myBtnSubmit">Tambahkan</button>
+                </div>
+            
+              </div>
+        </div>
+            
+</div>
+<div class="main row justify-content-center">
+    
+    <div class="col-1 col-md-1 md-1 main row justify-content-center">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama</th>
+                    <th>Alamat</th>
+                    <th>Nomor Tlp/Hp</th>
+                    <th>Pendidikan</th>
+                    <th>Kompetensi</th>
+                    <th>PelatihanBersertifikat</th>
+                    <th>Tetap/TidakTetap</th>
+                    <th>Aktif/TidakAktif</th>
+
+                </tr>
+            </thead>
+        <tbody id="student-list">
+            <tr>
+                <td>1</td>
+                <td>Julianto</td>
+                <td>Jln Eross</td>
+                <td>082000222888</td>
+                <td>SMA</td>
+                <td>Pengajar</td>
+                <td>-</td>
+                <td>Tetap</td>
+                <td>Aktif</td>
+                <td>
+                    <a href="a" class="btn btn-warning btn-sm edit">Edit</a>
+                    <a href="a" class="btn btn-warning btn-sm delete">Delete</a>
+                </td>
+            </tr>
+        </tbody> 
+        </table>
+    </div>
+    <script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+    </script>
+</div>
