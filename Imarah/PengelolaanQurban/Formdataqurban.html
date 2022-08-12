@@ -15,16 +15,18 @@
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     }
-      /* Head Content */
-      .head-content {
+    
+    /* Head Content */
+    .head-content {
       background-color: #d0ff9b;
-      border-bottom: 10px solid rgb(0, 0, 0);
+      border-bottom: 10px solid rgb(0, 0, 0);    
       color: rgb(16, 163, 65);
       width: 100%; /* Full width */
-      height: 100px; /* Full height */
-     
+      height: 125px; /* Full height */
+
+ 
     }
-    
+
     /* Modal Content */
     .modal-content {
       background-color: #fefefe;
@@ -48,12 +50,14 @@
       text-decoration: none;
       cursor: pointer;
     }
-    </style>
+    
+</style>
+
 
 <div class="d-sm-flex align-items-center justify-content-between mb-4 head-content">
-    <h1 class="fas fa-mosque"><b>   Data Pengurus Mesjid</b></h1>
-  
-    <a id="myBtn" class="btn btn-success">+</a> 
+    <h1 class="fas fa-mosque">   Form Qurban</h1>
+
+        <a id="myBtn" class="btn btn-success">+</a>
 
         <div id="myModal" class="modal">
     
@@ -64,43 +68,40 @@
                 </div>
 
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    <h3 class="h3 mb-0 text-gray-600">Form Pengurus Mesjid</h3>
+                    <h3 class="h3 mb-0 text-gray-600">Form Data Qurban </h3>
                 </div>
 
-                <label for="email"><b>Nama Pengurus :</b></label>
+                <label for="email"><b>No. Id. Jamaah :</b></label>
                 <input style="line-height: 10px" type="text" name="email" required >              
 
-                <label for="email"><b>Tempat Lahir:</b></label>
+                <label for="email"><b>Nama Lengkap :</b></label>
                 <input style="line-height: 10px" type="text" name="email" required>               
             
-                <label for="email"><b>Tanggal Lahir :</b></label>
+                <label for="email"><b>Tempat Tanggal Lahir :</b></label>
                 <input style="line-height: 10px" type="text" name="email" required>
 
-                <label for="email"><b>Jenis Kelamin :</b></label>
-                <select name="Jenis Kelamin">
+                <label for="email"><b>JK :</b></label>
+                <select name="JK">
                     <option value="-">-</option>
                     <option value="pria">Pria</option>
                     <option value="wanita">Wanita</option>
                 </select>
+                <!-- <input style="line-height: 10px" type="text" name="email" required> -->
 
-                <label for="email"><b>Alamat Rumah :</b></label>
+                <label for="email"><b>Alamat :</b></label>
                 <input style="line-height: 10px" type="text" name="email" required>
 
-                <label for="email"><b>Jabatan :</b></label>
-                <select name="Jabatan">
-                    <option value="-">-</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                </select>
-
-                <label for="email"><b>Periode Jabatan: </b></label>
-                <input style="line-height: 10px" type="text" name="email" required>
-               
-                <label for="email"><b>No. HP:</b></label>
+                <label for="email"><b>No.Telp Rumah :</b></label>
                 <input style="line-height: 10px" type="text" name="email" required>
 
-                <label for="email"><b>Email :</b></label>
-                <input style="line-height: 10px" type="email" name="email" required>
+                <label for="email"><b>HP : </b></label>
+                <input style="line-height: 10px" type="text" name="email" required>
+
+                <label for="email"><b>Pekerjaan :</b></label>
+                <input style="line-height: 10px" type="text" name="email" required>
+
+                <label for="email"><b>Keterangan :</b></label>
+                <input style="line-height: 10px" type="text" name="email" required>
 
                 <div class="col text-right"><br>
                     <!-- <button class="btn btn-success" id="myBtnSubmit">Simpan</button> -->
@@ -108,7 +109,7 @@
                 </div>
             
               </div>
-        </div>
+        </div>     
             
 </div>
 
@@ -119,21 +120,22 @@
 </div></br>
 
 <div class="main row justify-content-center">
-    
-    <div class="col-1 col-md-1 md-1 main row justify-content-center">
+
+    <div>
         <table class="table table-striped">
+
             <thead>
                 <tr>
                     <th>No</th>
-                    <th>Nama Pengurus</th>
-                    <th>Tempat Lahir</th>
-                    <th>Tanggal Lahir</th>
-                    <th>Jenis Kelamin</th>
-                    <th>Alamat Rumah</th>
-                    <th>Jabatan</th>
-                    <th>Periode Jabatan</th>
-                    <th>No. Hp </th>
-                    <th>Email</th>
+                    <th>No. Id. Jamaah</th>
+                    <th>Nama Lengkap</th>
+                    <th>Tempat Tanggal Lahir</th>
+                    <th>JK</th>
+                    <th>Alamat</th>
+                    <th>No.Telp Rumah</th>
+                    <th>HP</th>
+                    <th>Pekerjaan</th>
+                    <th>Keterangan</th>
                     <th>Action</th>
 
                 </tr>
@@ -142,14 +144,14 @@
             <tr>
                 <td>1</td>
                 <td>2603</td>
-                <td>Azriel Ilham</td>
+                <td>Anisa Tri Haryani</td>
                 <td>Bogor, 26 Maret 2003</td>
                 <td>Perempuan</td>
-                <td>2</td>
                 <td>Jln. Lodaya</td>
-                <td>Tetap</td>
-                <td>Aktif</td>
-                <td>Tetap</td>
+                <td>085775886370</td>
+                <td>085775886370</td>
+                <td>Programmer</td>
+                <td></td>
                 <td>
                     <a href="a" class="btn btn-success fas fa-edit"></a>
                     <a href="a" class="btn btn-danger fas fa-trash-alt"></a>
