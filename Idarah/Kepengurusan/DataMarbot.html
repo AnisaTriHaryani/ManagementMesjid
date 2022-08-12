@@ -41,11 +41,10 @@
     }
     </style>
 
-
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-    <h1 class="h3 mb-0 text-gray-600">Data Marbot</h1>
+    <h1 class="fas fa-mosque bg-light py-4 text-info head"> Data Marbot</h1>
   
-        <button class="btn btn-success" id="myBtn">Add</button>    
+    <a id="myBtn" class="btn btn-success">+</a>
 
         <div id="myModal" class="modal">
     
@@ -91,14 +90,22 @@
                     <option value="tidak aktif">Tidak Aktif</option>
                 </select>
 
-                <div class="col text-right">
-                    <button class="btn btn-success" id="myBtnSubmit">Simpan</button>
+                <div class="col text-right"><br>
+                    <!-- <button class="btn btn-success" id="myBtnSubmit">Simpan</button> -->
+                    <input class="btn btn-success" type="submit" value="Simpan"><br>
                 </div>
             
               </div>
         </div>
             
 </div>
+
+<div class="text-right">
+    <a type='button' class='btn btn-success right-block fas fa-file-pdf btnpdf'> PDF</a>
+    <a type='button' class='btn btn-danger right-block fas fa-file-excel btnxls'> XLS</a>
+    <a type='button' class='btn btn-warning right-block fas fa-folder btnpdf'> PRINT</a>
+</div></br>
+
 <div class="main row justify-content-center">
     
     <div class="col-1 col-md-1 md-1 main row justify-content-center">
@@ -129,12 +136,12 @@
                 <td>Jln. Lodaya</td>
                 <td>Tetap</td>
                 <td>Aktif</td>
-                
                 <td>
-                    <a href="a" class="btn btn-warning btn-sm edit">Edit</a>
-                    <a href="a" class="btn btn-warning btn-sm delete">Delete</a>
-
+                    <a href="a" class="btn btn-success fas fa-edit"></a>
+                    <a href="a" class="btn btn-danger fas fa-trash-alt"></a>
+                    <a href="a" class="btn btn-warning fas fa-folder"></a>
                 </td>
+                
             </tr>
         </tbody> 
         </table>
