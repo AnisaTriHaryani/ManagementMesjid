@@ -19,16 +19,18 @@
     /* Head Content */
     .head-content {
       background-color: #d0ff9b;
-      border-bottom: 10px solid rgb(0, 0, 0);
+      border-bottom: 10px solid rgb(0, 0, 0);    
       width: 100%; /* Full width */
       height: 100px; /* Full height */
 
+ 
     }
 
     .huruf{
       color: rgb(16, 163, 65);
     }
 
+    /* Modal Content */
     .modal-content {
       background-color: #fefefe;
       margin: auto;
@@ -51,15 +53,14 @@
       text-decoration: none;
       cursor: pointer;
     }
-    </style>
+    
+</style>
 
 
 <div class="d-sm-flex align-items-center justify-content-between mb-4 head-content">
-    <h1 class="fas fa-mosque huruf">
-        <b>Data Imam</b>
-    </h1>
-  
-        <a class="btn btn-success" id="myBtn">+</a>    
+    <h1 class="fas fa-mosque huruf">   Data Inventaris</h1>
+
+        <a id="myBtn" class="btn btn-success">+</a>
 
         <div id="myModal" class="modal">
     
@@ -70,47 +71,32 @@
                 </div>
 
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    <h3 class="h3 mb-0 text-gray-600">Form Imam</h3>
+                    <h3 class="h3 mb-0 text-gray-600">Form Data inventaris</h3>
                 </div>
 
-                <label for="email"><b>Nama :</b></label>
-                <input style="line-height: 10px" type="text" name="email" required >              
-
-                <label for="email"><b>Alamat :</b></label>
+                <label for="email"><b>Nama Kendaraan :</b></label>
                 <input style="line-height: 10px" type="text" name="email" required>               
             
-                <label for="email"><b>Telp/HP :</b></label>
-                <input style="line-height: 10px" type="text" name="email" required>
-
-                <label for="email"><b>Pendidikan :</b></label>
-                <input style="line-height: 10px" type="text" name="email" required>
-
-                <label for="email"><b>Kompetensi :</b></label>
-                <input style="line-height: 10px" type="text" name="email" required>
-
-                <label for="email"><b>Pelatihan Bersertifikat :</b></label>
-                <input style="line-height: 10px" type="text" name="email" required>
-
-                <label for="email"><b>Tetap/Tidak Tetap : </b></label>
+                <label for="email"><b>Jenis kendaraan :</b></label>
                 <select name="JK">
                     <option value="-">-</option>
-                    <option value="tetap">Tetap</option>
-                    <option value="tidak tetap">Tidak Tetap</option>
+                    <option value="pria">Roda Dua</option>
+                    <option value="pria">Roda Tiga</option>
+                    <option value="wanita">Roda Empat</option>
+                    <option value="wanita">Lebih Dari Empat</option>
                 </select>
-               
-                <label for="email"><b>Aktif/Tidak Aktif :</b></label>
-                <select name="JK">
-                    <option value="-">-</option>
-                    <option value="aktif">Aktif</option>
-                    <option value="tidak aktif">Tidak Aktif</option>
-                </select>
+                <!-- <input style="line-height: 10px" type="text" name="email" required> -->
 
-                <div class="col text-right">
-                    <button class="btn btn-success" id="myBtnSubmit">Simpan</button>
+                <label for="email"><b>No Pol :</b></label>
+                <input style="line-height: 10px" type="text" name="email" required>
+
+                <div class="col text-right"><br>
+                    <!-- <button class="btn btn-success" id="myBtnSubmit">Simpan</button> -->
+                    <input class="btn btn-success" type="submit" value="Simpan"><br>
                 </div>
             
               </div>
-        </div>
+        </div>     
             
 </div>
 
@@ -121,41 +107,29 @@
 </div></br>
 
 <div class="main row justify-content-center">
-    
-    <div class="col-1 col-md-1 md-1 main row justify-content-center">
+
+    <div>
         <table class="table table-striped">
+
             <thead>
                 <tr>
-                    <th>No</th>
-                    <th>Nama</th>
-                    <th>Alamat</th>
-                    <th>Telp/HP</th>
-                    <th>Pendidikan</th>
-                    <th>Kompetensi</th>
-                    <th>Pelatihan Bersertifikat</th>
-                    <th>Tetap/Tidak Tetap</th>
-                    <th>Aktif/Tidak Aktif </th>
+                    <th>Nama Kendaraan</th>
+                    <th>Jenis Kendaraan</th>
+                    <th>no Pol</th>
                     <th>Action</th>
-
                 </tr>
             </thead>
         <tbody id="student-list">
             <tr>
-                <td>1</td>
-                <td>2603</td>
-                <td>Azriel Ilham</td>
-                <td>Bogor, 26 Maret 2003</td>
-                <td>Perempuan</td>
-                <td>2</td>
-                <td>Jln. Lodaya</td>
-                <td>Tetap</td>
-                <td>Aktif</td>
-                
+                <td>Mini Bus</td>
+                <td>Lebih Dari Empat</td>
+                <td>B 3351 DKI</td>
                 <td>
                     <a href="a" class="btn btn-success fas fa-edit"></a>
                     <a href="a" class="btn btn-danger fas fa-trash-alt"></a>
                     <a href="a" class="btn btn-warning fas fa-folder"></a>
                 </td>
+                
             </tr>
         </tbody> 
         </table>
