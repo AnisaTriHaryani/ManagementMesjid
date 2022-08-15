@@ -26,6 +26,22 @@
  
     }
 
+    .head-table{
+      background-color: #0BCA04;
+      border-bottom: 10px solid rgb(252, 249, 249);
+      width: 100%; /* Full width */
+      height: 100px; /* Full height */
+
+    }
+
+    .huruf_table{
+      color: rgb(240, 247, 242);
+    }
+
+    .huruf_tablelist{
+      color: rgb(0, 0, 0);
+    }
+
     .huruf{
       color: rgb(16, 163, 65);
     }
@@ -126,9 +142,8 @@
 
     <div>
         <table class="table table-striped">
-
-            <thead>
-                <tr>
+          <thead class="head-table">
+            <tr class="huruf_table">
                     <th>No</th>
                     <th>No. Id. Jamaah</th>
                     <th>Nama Lengkap</th>
@@ -144,7 +159,7 @@
                 </tr>
             </thead>
         <tbody id="student-list">
-            <tr>
+            <tr class="huruf_tablelist">
                 <td>1</td>
                 <td>2603</td>
                 <td>Anisa Tri Haryani</td>
