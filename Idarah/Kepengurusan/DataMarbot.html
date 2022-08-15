@@ -65,9 +65,9 @@
                     <span class="close">&times;</span>
                 </div>
 
-                <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    <h3 class="h3 mb-0 text-gray-600">Form Marbot</h3>
-                </div>
+                <div class="d-sm-flex align-items-center justify-content-between mb-4 head-content">
+                  <h3 class="fas fa-mosque huruf"> Form Marbot</h3>
+              </div>
 
                 <label for="email"><b>Nama :</b></label>
                 <input style="line-height: 10px" type="text" name="email" required >              
@@ -148,7 +148,7 @@
                 <td>Tetap</td>
                 <td>Aktif</td>
                 <td>
-                    <a href="a" class="btn btn-success fas fa-edit"></a>
+                    <a id="BtnEdit" class="btn btn-success fas fa-edit"></a>
                     <a href="a" class="btn btn-danger fas fa-trash-alt"></a>
                     <a href="a" class="btn btn-warning fas fa-folder"></a>
                 </td>
@@ -163,12 +163,17 @@ var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
+var BtnEdit = document.getElementById("BtnEdit");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+BtnEdit.onclick = function() {
   modal.style.display = "block";
 }
 
